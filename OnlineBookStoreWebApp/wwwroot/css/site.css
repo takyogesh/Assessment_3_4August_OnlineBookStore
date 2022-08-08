@@ -1,0 +1,97 @@
+html {
+  font-size: 14px;
+}
+/*.bookImage{
+    border: 2px solid black;
+    margin-top:4px;
+}*/
+.detailimg{
+    width:300px;
+    height:300px;
+}
+.form {
+    position: relative;
+}
+
+    .form .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #9ca3af;
+    }
+
+    .form span {
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        padding: 2px;
+        border-left: 1px solid #d1d5db;
+    }
+
+.left-pan {
+    padding-left: 5px;
+}
+
+    .left-pan i {
+        padding-left: 10px;
+    }
+
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+    .form-input:focus {
+        box-shadow: none;
+        border: none;
+    }
+.image {
+    width: 200px;
+    height: 300px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+    .search input {
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+    }
+
+
+        .search input:focus {
+            box-shadow: none;
+            border: 2px solid blue;
+        }
+
+    .search .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 16px;
+    }
+
+    .search button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        background: blue;
+    }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

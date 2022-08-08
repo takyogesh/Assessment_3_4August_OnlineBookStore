@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lTLzKsyTeLil6qb8d3ZHx9qqjLArFJSGmms27/eKukw=",
+  "Source": "OnlineBookStore_WebApi",
+  "BasePath": "_content/OnlineBookStore_WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

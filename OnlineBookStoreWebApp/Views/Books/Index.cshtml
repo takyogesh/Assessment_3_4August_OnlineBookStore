@@ -1,0 +1,63 @@
+﻿@model List<OnlineBookStore_WebApp.Models.Book>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<div class="container m-5">
+
+      <form asp-action="Index" >
+          <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                  <div class="form">
+                    <i class="fa fa-search"></i>
+                      <input type="text" class="form-control form-input" name="SearchQuery" placeholder="Search">
+                          <span class="left-pan"><i><input type="submit" value="Search" /> </i>
+                          </span>
+                  </div>
+            </div>
+          </div>
+      </form>
+</div>*@
+   <br />
+
+   <div class="container m-5">
+        <form asp-action="Index" >
+       <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control" name="SearchQuery" placeholder="Search">
+                    <span> <button class="btn btn-primary">Search</button> </span>
+                </div>
+            </div>
+       </div>
+        </form>
+    </div>
+   <br />
+<div class="container">
+    <div >
+        @{
+            var counter = 1;
+        }
+        <div class="row">
+
+        
+        @foreach(var books in Model)
+        {
+           
+            <div class="col col-lg-3 col-md-12">
+                     
+                <div class="bookImage">
+                    <i><b>Book Name:</b> @books.Name</i>
+                    <img  class="image m-2" src="/@books.Image"/>
+                </div>
+                <div class="details mt-2"> 
+                    <a asp-action="Delete" asp-route-id="@books.Id" class="btn btn-danger">Delete</a>&nbsp;
+                    <a asp-action="Edit" asp-route-id="@books.Id" class="btn btn-outline-secondary">Edit</a>&nbsp;
+                    <a asp-action="Details" asp-route-id="@books.Id" class="btn btn-info">Details</a>&nbsp;
+                </div>
+            </div>
+        }
+        </div>
+    </div>
+</div>
